@@ -242,7 +242,7 @@ svg.like-icon {
 }
 
 .button:focus {
-  outline: none; 
+  outline: none;
 }
 
 .button:focus-visible {
