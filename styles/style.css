@@ -140,38 +140,6 @@
   text-wrap: nowrap;
 }
 
-/* .filter-grayscale .card__image {
-  filter: grayscale(0.8);
-}
-
-.filter-opacity .card__image {
-  filter: opacity(0.7);
-}
-
-.filter-mix .card__image {
-  filter: contrast(1.5) brightness(1.2);
-}
-
-.filter-contrast .card__image {
-  filter: contrast(2);
-}
-
-.filter-invert .card__image {
-  filter: invert(0.8);
-}
-
-.filter-sepia .card__image {
-  filter: sepia(0.9);
-}
-
-.filter-blur .card__image {
-  filter: blur(2px);
-}
-
-.filter-hue-rotate .card__image {
-  filter: hue-rotate(90deg) saturate(1.5);
-} */
-
 .card_text {
   padding: var(--padding-text);
   line-height: var(--line-height-text);
