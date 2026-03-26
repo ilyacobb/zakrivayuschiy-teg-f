@@ -112,39 +112,6 @@
   aspect-ratio: 1 / 1;
 }
 
-/* .filter-grayscale img {
-  filter: grayscale(0.7);
-}
-
-.filter-opacity img {
-  filter: opacity(0.8);
-}
-
-.filter-mix img {
-  filter: invert(0.7) contrast(1) brightness(100%);
-} 
-
-.filter-contrast img {
-  filter: contrast(20%);
-}
-
-.filter-invert img {
-  
-  filter: invert(0.7);
-}
-
-.filter-sepia img {
-  filter: sepia(80%);
-} */
-
-.filter-blur img {
-  filter: blur(0.2rem);
-}
-
-.filter-hue-rotate img {
-  filter: hue-rotate(0.5turn);
-}
-
 .watermark {
   font-family: var(--variable-font), var(--system-font);
   opacity: 50%;
@@ -174,7 +141,7 @@
 }
 
 .card_text {
-  padding: var(--padding-text); 
+  padding: var(--padding-text);
   line-height: var(--line-height-text);
   border-block-start: var(--outline-main);
 }
@@ -242,16 +209,12 @@ svg.like-icon {
   border: var(--outline-main);
 }
 
-.button {
-  transition: box-shadow 0.3s ease;
-}
-
-.button:focus { 
+.button:focus {
   outline: none; 
 }
 
 .button:focus-visible {
-  box-shadow: 2px 2px 0 var(--accent-color); 
+  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .card__icon-button:focus {
@@ -266,6 +229,7 @@ svg.like-icon {
   position: relative;
   overflow: hidden;
   background-color: var(--background-color);
+  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -421,7 +385,7 @@ dialog::backdrop {
     flex-direction: row;
   }
 
-  svg.floppy  {
+  svg.floppy {
     width: 21px;
   }
 
