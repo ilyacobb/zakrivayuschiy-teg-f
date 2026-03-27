@@ -396,7 +396,8 @@ dialog::backdrop {
   }
 
   svg.floppy {
-    width: 21px;
+    width: 28px;
+    height: 28px;
   }
 
   .dialog {
