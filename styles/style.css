@@ -11,22 +11,22 @@
 */
 @supports (font-variation-settings: normal) {
   .page {
-    font-family: var(--variable-font-main), sans-serif;
+    font-family: var(--main-font), sans-serif;
   }
 
   .header,
   .header__title,
   .like-icon,
   .button__text {
-    font-family: var(--variable-font), fantasy;
+    font-family: var(--accent-font), fantasy;
   }
 }
 
 .page {
   min-inline-size: 320px;
   inline-size: 100%;
-  font-size: var(--fsize-main);
-  font-variation-settings: 'wght' var(--fweight-main, 400);
+  font-size: var(--font-size-main);
+  font-variation-settings: 'wght' var(--font-weight-main, 410);
   background-size: cover;
   background-attachment: fixed;
   background-image: var(--background-image-main, repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px), repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
@@ -41,9 +41,16 @@
 .header_block {
   padding-block-start: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
   padding-block-end: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: column;
+  min-inline-size: 100%;
+  background-color: var(--background-color);
+  border: var(--outline-main);
 }
 
-.header_block,
 .save {
   display: flex;
   align-items: center;
@@ -51,7 +58,6 @@
   flex-direction: column;
 }
 
-.header_block,
 .card_block {
   flex-direction: column;
   min-inline-size: 100%;
@@ -59,8 +65,6 @@
   border: var(--outline-main);
 }
 
-.header__logo,
-.header__title,
 .text-dialog {
   text-transform: uppercase;
   align-self: center;
@@ -71,17 +75,22 @@
   align-items: center;
   line-height: var(--line-height-text-botton);
   color: var(--accent-color-text);
+  text-transform: uppercase;
 }
 
 .header__logo {
   font-size: clamp(3.063rem, 2.7109rem + 1.5023vw, 4.063rem);
-  font-variation-settings: 'wght' var(--fweight-main, 400);
+  font-weight: 410;
   line-height: 1;
+  text-transform: uppercase;
+  align-self: center;
 }
 
 .header__title {
   margin-top: 20px;
   font-size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
+  text-transform: uppercase;
+  align-self: center;
 }
 
 .card_section {
@@ -100,7 +109,7 @@
   padding-block-start: 4px;
   padding-block-end: 6px;
   padding-inline: 10px;
-  font-variation-settings: 'wght' var(--fweight-title, 700);
+  font-variation-settings: 'wght' var(--font-weight-title, 715);
   border-bottom: var(--outline-main);
 }
 
@@ -113,7 +122,7 @@
 }
 
 .watermark {
-  font-family: var(--variable-font), var(--system-font);
+  font-family: var(--accent-font), var(--system-font);
   opacity: 50%;
   font-size: 0.875rem;
   position: absolute;
@@ -134,10 +143,6 @@
     text-stroke: 1px var(--background-color);
     text-shadow: none;
   }
-}
-
-.filter-blur label {
-  text-wrap: nowrap;
 }
 
 .card_text {
@@ -311,6 +316,11 @@ svg {
 .like-icon .main-body {
   fill: transparent;
   transition: fill 0.3s linear;
+}
+
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
 }
 
 .is-liked .heart {

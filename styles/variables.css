@@ -1,12 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --variable-font-main: 'Inter-Variable';
-    --variable-font: 'PressStart2P';
+    --main-font: 'Inter-Variable', sans-serif;
+    --accent-font: 'PressStart2P', monospace;
     --system-font: sans-serif;
     --color-text: rgba(0, 0, 0, 1);
-    --fsize-main: 18px;
-    --fweight-main: 400;
-    --fweight-title: 700;
+    --font-size-main: 18px;
+    --font-weight-main: 410;
+    --font-weight-title: 715;
     --line-height-text: 1.167;
     --line-height-text-botton: 0.9;
     --line-height-dialog: 1.5;
