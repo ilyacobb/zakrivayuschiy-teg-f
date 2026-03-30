@@ -212,6 +212,7 @@ svg.like-icon {
   margin-top: 52px;
   margin-bottom: 100px;
   border: var(--outline-main);
+  
 }
 
 .button:focus {
@@ -257,10 +258,14 @@ svg {
 
 .floppy {
   width: 28px;
+  height: 28px;
+  position: relative;
+  mix-blend-mode: difference;
+  color: var(--accent-color-text);
+  z-index: 2;
 }
 
 .button__text,
-.floppy,
 .floppy-dialog {
   position: relative;
   mix-blend-mode: difference;
