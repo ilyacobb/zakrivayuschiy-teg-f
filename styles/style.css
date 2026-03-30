@@ -62,7 +62,6 @@
   align-items: center;
   line-height: var(--line-height-text-botton);
   color: var(--accent-color-text);
-  text-transform: uppercase;
 }
 
 .header__logo {
@@ -94,10 +93,11 @@
 .card_title {
   font-size: inherit;
   padding-block-start: 4px;
-  padding-block-end: 6px;
+  padding-block-end: 3px;  /**/
   padding-inline: 10px;
   font-variation-settings: 'wght' var(--font-weight-title, 715);
   border-bottom: var(--outline-main);
+  
 }
 
 .card__image {
@@ -113,7 +113,7 @@
   opacity: 50%;
   font-size: 0.875rem;
   position: absolute;
-  inset-inline-end: clamp(0.75rem, 0.4859rem + 1.1268vw, 1.5rem);
+  inset-inline-end: clamp(1.5rem, 0.4859rem + 1.1268vw, 1.5rem);
   inset-block-start: clamp(1.5rem, 1.4778rem + 0.0946vw, 1.563rem);
   text-shadow:
   -1px 0 var(--background-color), 
@@ -196,7 +196,7 @@ svg.like-icon {
   padding-inline-start: 20px;
   padding-inline-end: 20px;
   gap: 8px;
-  margin-top: 52px;
+  margin-top: 50px;
   margin-bottom: 100px;
   border: var(--outline-main);
   display: flex;
@@ -393,8 +393,8 @@ dialog::backdrop {
   }
 
   svg.floppy {
-    width: 28px;
-    height: 28px;
+    width: 21px;
+    height: 21px;
   }
 
   .dialog {
@@ -405,4 +405,36 @@ dialog::backdrop {
   .dialog-button {
     min-inline-size: 293px;
   }
+}
+
+
+.filter-grayscale img {
+  filter: grayscale(0.6);
+}
+
+.filter-opacity img {
+  filter: grayscale(0.8);
+}
+
+/* .filter-mix img{
+} */
+
+.filter-contrast img {
+filter: contrast(50%);
+}
+
+.filter-invert img {
+filter: invert(0.7) contrast(1) brightness(100%);
+}
+
+.filter-sepia img {
+filter: sepia(90%);
+}
+
+.filter-blur img {
+  filter: blur(0.8rem);
+}
+
+.filter-hue-rotate img {
+filter: hue-rotate(0.5turn);
 }
