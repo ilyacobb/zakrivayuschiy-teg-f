@@ -45,17 +45,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex-direction: column;
   min-inline-size: 100%;
   background-color: var(--background-color);
   border: var(--outline-main);
-}
-
-.save {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .card_block {
@@ -63,11 +55,6 @@
   min-inline-size: 100%;
   background-color: var(--background-color);
   border: var(--outline-main);
-}
-
-.text-dialog {
-  text-transform: uppercase;
-  align-self: center;
 }
 
 .button__text {
@@ -212,7 +199,10 @@ svg.like-icon {
   margin-top: 52px;
   margin-bottom: 100px;
   border: var(--outline-main);
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .button:focus {
@@ -380,6 +370,8 @@ dialog::backdrop {
 .text-dialog {
   text-wrap: wrap;
   line-height: var(--line-height-dialog);
+  text-transform: uppercase;
+  align-self: center;
 }
 
 .dialog-button {
