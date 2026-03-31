@@ -380,6 +380,7 @@ dialog::backdrop {
   block-size: 38px;
   padding: 9px 17px;
   border: var(--outline-main);
+  text-transform: uppercase;
 }
 
 @media (width >= 376px) {
@@ -408,33 +409,33 @@ dialog::backdrop {
 }
 
 
-.filter-grayscale img {
+.filter-grayscale {
   filter: grayscale(0.6);
 }
 
-.filter-opacity img {
+.filter-opacity {
   filter: grayscale(0.8);
 }
 
 /* .filter-mix img{
 } */
 
-.filter-contrast img {
-filter: contrast(50%);
+.filter-contrast {
+  filter: contrast(50%);
 }
 
-.filter-invert img {
-filter: invert(0.7) contrast(1) brightness(100%);
+.filter-invert {
+  filter: invert(0.7) contrast(1) brightness(100%);
 }
 
-.filter-sepia img {
-filter: sepia(90%);
+.filter-sepia {
+  filter: sepia(90%);
 }
 
-.filter-blur img {
+.filter-blur {
   filter: blur(0.8rem);
 }
 
-.filter-hue-rotate img {
-filter: hue-rotate(0.5turn);
+.filter-hue-rotate {
+  filter: hue-rotate(0.5turn);
 }
